@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Namespaces>
+  <Namespace Name="Telerik.XamarinForms.InputRenderer.WinRT.AutoComplete">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Consider merging the types defined in 'Telerik.XamarinForms.InputRenderer.WinRT.AutoComplete' with another namespace.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.WindowsPhone\bin\Release\Telerik.XamarinForms.InputRenderer.WinRT.WindowsPhone.dll">
+   <Modules>
+    <Module Name="telerik.xamarinforms.inputrenderer.winrt.windowsphone.dll">
+     <Namespaces>
+      <Namespace Name="Telerik.XamarinForms.InputRenderer.WinRT">
+       <Types>
+        <Type Name="AutoCompleteAdapter" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#CreateInstance()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="22">Because the behavior of 'string.Format(string, params object[])' could vary based on the current user's locale settings, replace this call in 'AutoCompleteAdapter.CreateInstance()' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify System.Globalization.CultureInfo.CurrentCulture as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify System.Globalization.CultureInfo.InvariantCulture.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateCompletionMode(Telerik.XamarinForms.Input.RadAutoComplete,Telerik.XamarinForms.InputRenderer.WinRT.ExtendedRadAutoCompleteBox)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="110">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteAdapter.UpdateCompletionMode(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateDisplayMode(Telerik.XamarinForms.Input.RadAutoComplete,Telerik.XamarinForms.InputRenderer.WinRT.ExtendedRadAutoCompleteBox)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="121">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteAdapter.UpdateDisplayMode(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="sourceOwner" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="121">Parameter 'sourceOwner' of 'AutoCompleteAdapter.UpdateDisplayMode(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+            <Message Id="targetOwner" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="121">Parameter 'targetOwner' of 'AutoCompleteAdapter.UpdateDisplayMode(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateImagePath(Telerik.XamarinForms.Input.RadAutoComplete,Telerik.XamarinForms.InputRenderer.WinRT.ExtendedRadAutoCompleteBox)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="101">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteAdapter.UpdateImagePath(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="sourceOwner" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="101">Parameter 'sourceOwner' of 'AutoCompleteAdapter.UpdateImagePath(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+            <Message Id="targetOwner" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="101">Parameter 'targetOwner' of 'AutoCompleteAdapter.UpdateImagePath(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateItemsSource(Telerik.XamarinForms.Input.RadAutoComplete,Telerik.XamarinForms.InputRenderer.WinRT.ExtendedRadAutoCompleteBox)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="125">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteAdapter.UpdateItemsSource(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateMinimumCharactersToSearch(Telerik.XamarinForms.Input.RadAutoComplete,Telerik.XamarinForms.InputRenderer.WinRT.ExtendedRadAutoCompleteBox)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="95">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteAdapter.UpdateMinimumCharactersToSearch(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateShowSuggestionView(Telerik.XamarinForms.Input.RadAutoComplete,Telerik.XamarinForms.InputRenderer.WinRT.ExtendedRadAutoCompleteBox)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="77">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteAdapter.UpdateShowSuggestionView(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateStringPath(Telerik.XamarinForms.Input.RadAutoComplete,Telerik.XamarinForms.InputRenderer.WinRT.ExtendedRadAutoCompleteBox)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="105">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteAdapter.UpdateStringPath(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateSuggestionItemTemplate(Telerik.XamarinForms.Input.RadAutoComplete,Telerik.XamarinForms.InputRenderer.WinRT.ExtendedRadAutoCompleteBox)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="91">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteAdapter.UpdateSuggestionItemTemplate(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="sourceOwner" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="91">Parameter 'sourceOwner' of 'AutoCompleteAdapter.UpdateSuggestionItemTemplate(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+            <Message Id="targetOwner" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="91">Parameter 'targetOwner' of 'AutoCompleteAdapter.UpdateSuggestionItemTemplate(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateSuggestMode(Telerik.XamarinForms.Input.RadAutoComplete,Telerik.XamarinForms.InputRenderer.WinRT.ExtendedRadAutoCompleteBox)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="116">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteAdapter.UpdateSuggestMode(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="sourceOwner" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="116">Parameter 'sourceOwner' of 'AutoCompleteAdapter.UpdateSuggestMode(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+            <Message Id="targetOwner" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteAdapter.cs" Line="116">Parameter 'targetOwner' of 'AutoCompleteAdapter.UpdateSuggestMode(RadAutoComplete, ExtendedRadAutoCompleteBox)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AutoCompleteRenderer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateNativeElement(Telerik.XamarinForms.Input.RadAutoComplete)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="AutoCompleteRenderer.cs" Line="38">The 'this' parameter (or 'Me' in Visual Basic) of 'AutoCompleteRenderer.CreateNativeElement(RadAutoComplete)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ExtendedRadAutoCompleteBox" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PrepareContainerForSuggestionItem(Windows.UI.Xaml.DependencyObject,System.Object)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="ExtendedRadAutoCompleteBox.cs" Line="52">In member 'ExtendedRadAutoCompleteBox.PrepareContainerForSuggestionItem(DependencyObject, object)', change parameter name 'container' to 'element' in order to match the identifier as it has been declared in 'RadAutoCompleteBox.PrepareContainerForSuggestionItem(DependencyObject, object)'.</Issue>
+            </Message>
+            <Message Id="1#" TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="ExtendedRadAutoCompleteBox.cs" Line="52">In member 'ExtendedRadAutoCompleteBox.PrepareContainerForSuggestionItem(DependencyObject, object)', change parameter name 'businessObject' to 'item' in order to match the identifier as it has been declared in 'RadAutoCompleteBox.PrepareContainerForSuggestionItem(DependencyObject, object)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TypeMappingsExtensions" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Load()" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared" File="TypeMappingsExtensions.cs" Line="47">Because the behavior of 'string.Format(string, params object[])' could vary based on the current user's locale settings, replace this call in 'TypeMappingsExtensions.Load()' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify System.Globalization.CultureInfo.CurrentCulture as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify System.Globalization.CultureInfo.InvariantCulture.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WindowsDataFormLayoutDefinition" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SetBackground(Windows.UI.Xaml.Controls.Control,Telerik.XamarinForms.Common.Background)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\DataForm" File="WindowsDataFormLayoutDefinition.cs" Line="255">The 'this' parameter (or 'Me' in Visual Basic) of 'WindowsDataFormLayoutDefinition.SetBackground(Control, Background)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateEditorStyle(Telerik.UI.Xaml.Controls.Data.EntityPropertyControl,Telerik.XamarinForms.InputRenderer.WinRT.WindowsEntityProperty)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="property" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\DataForm" File="WindowsDataFormLayoutDefinition.cs" Line="208">Parameter 'property' of 'WindowsDataFormLayoutDefinition.UpdateEditorStyle(EntityPropertyControl, WindowsEntityProperty)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateValueFormats(Telerik.UI.Xaml.Controls.Data.EntityPropertyControl,Telerik.XamarinForms.InputRenderer.WinRT.WindowsEntityProperty)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\DataForm" File="WindowsDataFormLayoutDefinition.cs" Line="163">The 'this' parameter (or 'Me' in Visual Basic) of 'WindowsDataFormLayoutDefinition.UpdateValueFormats(EntityPropertyControl, WindowsEntityProperty)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Telerik.XamarinForms.InputRenderer.WinRT.AutoComplete">
+       <Types>
+        <Type Name="ExtendedSuggestionItem" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetPropertyValue(System.Object,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="ExtendedSuggestionItem.cs" Line="193">The 'this' parameter (or 'Me' in Visual Basic) of 'ExtendedSuggestionItem.GetPropertyValue(object, string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RecursivelyCacheHightlightLabel(Xamarin.Forms.Layout`1&lt;Xamarin.Forms.View&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="ExtendedSuggestionItem.cs" Line="130">'item', a variable, is cast to type 'Layout&lt;View&gt;' multiple times in method 'ExtendedSuggestionItem.RecursivelyCacheHightlightLabel(Layout&lt;View&gt;)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="ExtendedSuggestionItem.cs" Line="125">'item', a variable, is cast to type 'RadAutoCompleteLabel' multiple times in method 'ExtendedSuggestionItem.RecursivelyCacheHightlightLabel(Layout&lt;View&gt;)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WrapTemplate(Xamarin.Forms.View)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-12-20 16:09:49Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\_J\workspace\Upload_XamarinForms_Release\Source\Input\InputRenderer.WinRT\InputRenderer.WinRT.Shared\AutoComplete" File="ExtendedSuggestionItem.cs" Line="114">The 'this' parameter (or 'Me' in Visual Basic) of 'ExtendedSuggestionItem.WrapTemplate(View)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+   <Name>Avoid namespaces with few types</Name>
+   <Description>A namespace should generally have more than five types.</Description>
+   <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182130.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+   <Name>Do not cast unnecessarily</Name>
+   <Description>Avoid duplicate casts where possible, since there is a cost associated with them.</Description>
+   <Resolution Name="Local">{0}, a variable, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182271.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725">
+   <Name>Parameter names should match base declaration</Name>
+   <Description>For usability reasons, parameter names in overridden methods should match those of the base declaration.</Description>
+   <Resolution Name="Default">In member {0}, change parameter name {1} to {2} in order to match the identifier as it has been declared in {3}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182251.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{377C7081-58EF-43BC-91EB-7102559C1AE7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Aviation/Views/BizJetsView.xaml">
+    <Files>
+      <File FileName="Aviation/Views/BizJetsView.xaml" Line="34" Column="38" />
+      <File FileName="Aviation/Views/BizJetsView.xaml.cs" Line="40" Column="21" />
+      <File FileName="Aviation/ViewModels/BizJetsViewModel.cs" Line="37" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Aviation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EDF0AD8A-8226-49D2-8B39-02CBD8302980" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
