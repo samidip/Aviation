@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 using Xamarin.Forms;
 using Telerik.XamarinForms.DataControls.ListView;
-using System.Threading.Tasks;
+
 
 namespace Aviation
 {
@@ -38,6 +39,14 @@ namespace Aviation
 		void Book_BizJet(object sender, EventArgs e)
 		{
 			// Do stuff here.
+		}
+
+		private void BizJetsList_LoadOnDemand(object sender, EventArgs e)
+		{
+			BizJets lodBizJet = new BizJets();
+			lodBizJet.AircraftName = "Load on Demand Aircraft";
+			lodBizJet.AircraftCapacity = "N/A";
+			(this.BizJetsList.ItemsSource as ObservableCollection<BizJets>).Add(lodBizJet);
 		}
 	}
 }
