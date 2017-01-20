@@ -34,3 +34,7 @@
 /Users/sambasu/GitHub/Aviation/Aviation/bin/Debug/Telerik.XamarinForms.Primitives.dll
 /Users/sambasu/GitHub/Aviation/Aviation/bin/Debug/Telerik.XamarinForms.SkiaSharp.dll
 /Users/sambasu/GitHub/Aviation/Aviation/bin/Debug/Telerik.Everlive.Sdk.dll
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.Test.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.Test.xaml.g.cs
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.HomeView.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.HomeView.xaml.g.cs

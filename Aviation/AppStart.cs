@@ -7,7 +7,7 @@ namespace Aviation
 	{
 		public App()
 		{
-			MainPage = new BizJetsView();
+			MainPage = new HomeView();
 		}
 
 		protected override void OnStart()

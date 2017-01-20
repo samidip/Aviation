@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
 using Telerik.Everlive.Sdk.Core;
+using Xamarin.Forms;
 
 namespace Aviation
 {
@@ -21,16 +22,26 @@ namespace Aviation
 
 		public async Task<ObservableCollection<BizJets>> GetAllBizJets()
 		{
-			var bizJetsManager = ELHandle.WorkWith().Data<BizJets>();
-			var allBizJets = await bizJetsManager.GetAll().ExecuteAsync();
-
 			BizJetsCollection = new ObservableCollection<BizJets>();
-			foreach (BizJets serializedBizJet in allBizJets)
-			{
-				BizJetsCollection.Add(serializedBizJet);
-			}
 
-			return BizJetsCollection;
+			if (Application.Current.Properties.ContainsKey("BizJetsCollection"))
+			{
+				BizJetsCollection = Application.Current.Properties["BizJetsCollection"] as ObservableCollection<BizJets>;
+				return BizJetsCollection;
+			}
+			else
+			{
+				var bizJetsManager = ELHandle.WorkWith().Data<BizJets>();
+				var allBizJets = await bizJetsManager.GetAll().ExecuteAsync();
+
+				foreach (BizJets serializedBizJet in allBizJets)
+				{
+					BizJetsCollection.Add(serializedBizJet);
+				}
+
+				Application.Current.Properties["BizJetsCollection"] = BizJetsCollection;
+				return BizJetsCollection;
+			}
 		}
 	}
 }

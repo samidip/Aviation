@@ -17,11 +17,15 @@ namespace Aviation {
     public partial class BizJetsView : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Telerik.XamarinForms.Primitives.RadSideDrawer HomeDrawer;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Telerik.XamarinForms.DataControls.RadListView BizJetsList;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(BizJetsView));
+            HomeDrawer = this.FindByName <global::Telerik.XamarinForms.Primitives.RadSideDrawer>("HomeDrawer");
             BizJetsList = this.FindByName <global::Telerik.XamarinForms.DataControls.RadListView>("BizJetsList");
         }
     }
