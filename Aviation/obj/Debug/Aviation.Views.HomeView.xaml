@@ -6,7 +6,7 @@
 	<ContentPage.Content>
 		<TelerikPrimitives:RadSideDrawer x:Name="HomeDrawer" DrawerLength="150" DrawerLocation="Right">
 		    <TelerikPrimitives:RadSideDrawer.MainContent>
-		        <TelerikDataControls:RadListView x:Name="BizJetsList" SelectionMode="None" ItemTapped="BizJet_Selected" IsItemsReorderEnabled="true" 
+		        <TelerikDataControls:RadListView x:Name="BizJetsList" SelectionMode="Single" ItemTapped="BizJet_Selected" IsItemsReorderEnabled="true" 
 				                         IsPullToRefreshEnabled="true" RefreshRequested="BizJetsList_RefreshRequested"
 				                         IsItemSwipeEnabled="True" SwipeThreshold="10" SwipeOffset="70, 0, 0, 0"
 										 IsLoadOnDemandEnabled="true" LoadOnDemandMode="Automatic" LoadOnDemand="BizJetsList_LoadOnDemand">

@@ -38,3 +38,15 @@
 /Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.Test.xaml.g.cs
 /Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.HomeView.xaml
 /Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.HomeView.xaml.g.cs
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.xaml.g.cs
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.BizJetDetailView.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.Image.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.Details.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.BizJetDetailView.xaml.g.cs
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.Image.xaml.g.cs
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.Details.xaml.g.cs
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.ImagePage.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.DetailsPage.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.ImagePage.xaml.g.cs
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.DetailsPage.xaml.g.cs

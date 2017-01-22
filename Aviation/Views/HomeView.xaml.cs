@@ -25,9 +25,11 @@ namespace Aviation
 			this.BizJetsList.ItemsSource = BZVM.BizJetsCollection;
 		}
 
-		private void BizJet_Selected(object sender, ItemTapEventArgs e)
+		async void BizJet_Selected(object sender, Telerik.XamarinForms.DataControls.ListView.ItemTapEventArgs e)
 		{
-			// Do stuff here.
+			BizJets selectedBizJet = (BizJets)e.Item;
+
+			await Navigation.PushAsync(new BizJetDetailView(selectedBizJet));
 		}
 
 		private void BizJetsList_RefreshRequested(object sender, PullToRefreshRequestedEventArgs e)

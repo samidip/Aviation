@@ -35,6 +35,16 @@
     </Compile>
     <Compile Include="Models\BizJets.cs" />
     <Compile Include="ViewModels\BizJetsViewModel.cs" />
+    <Compile Include="Views\BizJetDetailView\BizJetDetailView.xaml.cs">
+      <DependentUpon>BizJetDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BizJetDetailView\Image.xaml.cs">
+      <DependentUpon>ImagePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BizJetDetailView\Details.xaml.cs">
+      <DependentUpon>DetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\BizJetsDetailViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Telerik.XamarinForms.Chart">
@@ -75,9 +85,19 @@
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\BizJetDetailView\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\HomeView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BizJetDetailView\BizJetDetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BizJetDetailView\ImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BizJetDetailView\DetailsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

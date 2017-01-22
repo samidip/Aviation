@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{377C7081-58EF-43BC-91EB-7102559C1AE7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Aviation/Views/HomeView.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Aviation/Views/BizJetDetailView/Image.xaml.cs">
     <Files>
-      <File FileName="Aviation/Views/HomeView.xaml" Line="9" Column="84" />
-      <File FileName="Aviation/Views/HomeView.xaml.cs" Line="28" Column="66" />
+      <File FileName="Aviation/Views/HomeView.xaml" Line="26" Column="90" />
+      <File FileName="Aviation/Views/HomeView.xaml.cs" Line="10" Column="2" />
       <File FileName="Aviation/ViewModels/BizJetsViewModel.cs" Line="48" Column="1" />
-      <File FileName="Aviation/AppStart.cs" Line="10" Column="27" />
+      <File FileName="Aviation/AppStart.cs" Line="10" Column="49" />
+      <File FileName="Aviation/ViewModels/BizJetsDetailViewModel.cs" Line="21" Column="43" />
+      <File FileName="Aviation/Views/BizJetDetailView/BizJetDetailView.xaml.cs" Line="20" Column="4" />
+      <File FileName="Aviation/Views/BizJetDetailView/Image.xaml.cs" Line="19" Column="53" />
+      <File FileName="Aviation/Views/BizJetDetailView/ImagePage.xaml" Line="10" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Aviation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.896D9A35-FF62-4081-B069-BA836A211D64" />
