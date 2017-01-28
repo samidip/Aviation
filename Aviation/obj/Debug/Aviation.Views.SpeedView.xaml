@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Aviation.SpeedView"
+		     xmlns:TelerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+			 xmlns:TelerikCommon="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
+			 xmlns:TelerikGauges="clr-namespace:Telerik.XamarinForms.DataVisualization.Gauges;assembly=Telerik.XamarinForms.DataVisualization">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" Margin="20,45,10,10">
+			<Label Text="Pick your Jet:"/>
+			<TelerikInput:RadAutoComplete BackgroundColor="Silver" x:Name="autoCompleteSearchBox" Margin="0,15,0,0" 
+										  TextSearchPath="JetName" CompletionMode="Contains" DisplayMode="Tokens" />
+			<Button Text="Show Max Speed .." Clicked="SpeedButton_CLicked" HorizontalOptions="Start" />
+			<TelerikGauges:RadRadialGauge Margin="0,25,0,0">
+				  <TelerikGauges:RadRadialGauge.Axis>
+				    <TelerikGauges:GaugeLinearAxis Minimum="600" Maximum="1200" Step="50" />
+				  </TelerikGauges:RadRadialGauge.Axis>
+				  <TelerikGauges:RadRadialGauge.Indicators>
+				    <TelerikGauges:GaugeNeedleIndicator x:Name="SpeedIndicator" Value="900" Offset="30" Position="Start" />
+				    <TelerikGauges:GaugeShapeIndicator Value="80" />
+				  </TelerikGauges:RadRadialGauge.Indicators>
+				  <TelerikGauges:RadRadialGauge.Ranges>
+				    <TelerikGauges:GaugeRangesDefinition>
+				      <TelerikGauges:GaugeRange From="600" To="850" Color="Green" />
+				      <TelerikGauges:GaugeGradientRange From="850" To="1200">
+				        <TelerikCommon:RadGradientStop Color="Yellow" Offset="850" />
+				        <TelerikCommon:RadGradientStop Color="Red" Offset="1200" />
+				      </TelerikGauges:GaugeGradientRange>
+				    </TelerikGauges:GaugeRangesDefinition>
+				  </TelerikGauges:RadRadialGauge.Ranges>
+			</TelerikGauges:RadRadialGauge>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

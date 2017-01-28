@@ -1,6 +1,6 @@
-# Version: 10.3.1.7 (cycle8-xi: 8b53676)
-# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.7/lib/mtouch/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.7/lib/mtouch/mtouch.exe \
+# Version: 10.3.1.8 (cycle8-xi: 7beaef4)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/lib/mtouch/mtouch.exe \
 	--cache \
 	/Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -31,32 +31,6 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.Xamarin.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Chart.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.ChartRenderer.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Common.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Common.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.DataControls.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.DataControlsRenderer.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.DataVisualization.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Input.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.InputRenderer.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Primitives.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.PrimitivesRenderer.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.SkiaSharp.dll \
-	-r \
 	/Users/sambasu/GitHub/Aviation/packages/Xamarin.Forms.2.3.3.180/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
 	/Users/sambasu/GitHub/Aviation/packages/Xamarin.Forms.2.3.3.180/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
@@ -64,6 +38,38 @@
 	/Users/sambasu/GitHub/Aviation/packages/Xamarin.Forms.2.3.3.180/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
 	/Users/sambasu/GitHub/Aviation/packages/Xamarin.Forms.2.3.3.180/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.Xamarin.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Chart.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.ChartRenderer.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Common.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Common.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.DataControls.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.DataControlsRenderer.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.DataVisualization.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Input.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.InputRenderer.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Primitives.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.PrimitivesRenderer.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.SkiaSharp.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/SkiaSharp.1.56.0/lib/XamariniOS/SkiaSharp.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/SkiaSharp.Views.1.56.0/lib/XamariniOS/SkiaSharp.Views.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/SkiaSharp.Views.Forms.1.56.0/lib/XamariniOS/SkiaSharp.Views.Forms.dll \
 	-r \
 	/Users/sambasu/GitHub/Aviation/Aviation/bin/Debug/Aviation.dll \
 	-r \
@@ -325,32 +331,6 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.Xamarin.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Chart.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.ChartRenderer.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Common.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Common.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.DataControls.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.DataControlsRenderer.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.DataVisualization.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Input.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.InputRenderer.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.Primitives.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.PrimitivesRenderer.iOS.dll \
-	-r \
-	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.1220.4/lib/xamarinios10/Telerik.XamarinForms.SkiaSharp.dll \
-	-r \
 	/Users/sambasu/GitHub/Aviation/packages/Xamarin.Forms.2.3.3.180/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
 	/Users/sambasu/GitHub/Aviation/packages/Xamarin.Forms.2.3.3.180/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
@@ -358,6 +338,38 @@
 	/Users/sambasu/GitHub/Aviation/packages/Xamarin.Forms.2.3.3.180/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
 	/Users/sambasu/GitHub/Aviation/packages/Xamarin.Forms.2.3.3.180/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.Xamarin.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Chart.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.ChartRenderer.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Common.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Common.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.DataControls.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.DataControlsRenderer.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.DataVisualization.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Input.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.InputRenderer.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.Primitives.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.PrimitivesRenderer.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/Telerik.UI.for.Xamarin.2017.1.10118.10/lib/xamarinios10/Telerik.XamarinForms.SkiaSharp.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/SkiaSharp.1.56.0/lib/XamariniOS/SkiaSharp.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/SkiaSharp.Views.1.56.0/lib/XamariniOS/SkiaSharp.Views.iOS.dll \
+	-r \
+	/Users/sambasu/GitHub/Aviation/packages/SkiaSharp.Views.Forms.1.56.0/lib/XamariniOS/SkiaSharp.Views.Forms.dll \
 	-r \
 	/Users/sambasu/GitHub/Aviation/Aviation/bin/Debug/Aviation.dll \
 	-r \

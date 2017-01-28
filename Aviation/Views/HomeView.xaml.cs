@@ -15,6 +15,7 @@ namespace Aviation
 		public HomeView()
 		{
 			InitializeComponent();
+
 			BZVM = new BizJetsViewModel();
 			this.FetchViewData();
 		}
@@ -49,6 +50,16 @@ namespace Aviation
 			lodBizJet.AircraftName = "Load on Demand Aircraft";
 			lodBizJet.AircraftCapacity = "N/A";
 			(this.BizJetsList.ItemsSource as ObservableCollection<BizJets>).Add(lodBizJet);
+		}
+
+		async void SpeedCheck_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new SpeedView());
+		}
+
+		void BizJet_Clicked(object sender, System.EventArgs e)
+		{
+			this.HomeDrawer.IsOpen = false;
 		}
 	}
 }

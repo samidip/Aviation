@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 [assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.DataControls.RadListView), typeof(Telerik.XamarinForms.DataControlsRenderer.iOS.ListViewRenderer))]
 [assembly: ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.PrimitivesRenderer.iOS.SideDrawerRenderer))]
-
+[assembly: ExportRenderer(typeof(Telerik.XamarinForms.Input.RadAutoComplete), typeof(Telerik.XamarinForms.InputRenderer.iOS.AutoCompleteRenderer))]
 
 namespace Aviation.iOS
 {
@@ -22,6 +22,8 @@ namespace Aviation.iOS
 			Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
 			new Telerik.XamarinForms.DataControlsRenderer.iOS.ListViewRenderer();
 			new Telerik.XamarinForms.PrimitivesRenderer.iOS.SideDrawerRenderer();
+			new Telerik.XamarinForms.InputRenderer.iOS.AutoCompleteRenderer();
+			new Telerik.XamarinForms.DataVisualization.Gauges.RadRadialGauge();
 
 			LoadApplication(new App());
 

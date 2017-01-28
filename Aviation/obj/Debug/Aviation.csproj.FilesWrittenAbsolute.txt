@@ -50,3 +50,7 @@
 /Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.DetailsPage.xaml
 /Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.ImagePage.xaml.g.cs
 /Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.BizJetDetailView.DetailsPage.xaml.g.cs
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.SpeedView.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.SpeedView.xaml.g.cs
+/Users/sambasu/GitHub/Aviation/Aviation/bin/Debug/SkiaSharp.dll
+/Users/sambasu/GitHub/Aviation/Aviation/bin/Debug/SkiaSharp.Views.Forms.dll

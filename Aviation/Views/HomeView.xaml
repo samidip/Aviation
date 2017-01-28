@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Aviation.HomeView"
 		     xmlns:TelerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 		     xmlns:TelerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
-		     xmlns:TelerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives">
+		     xmlns:TelerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+			 Title="BizJets">
 	<ContentPage.Content>
 		<TelerikPrimitives:RadSideDrawer x:Name="HomeDrawer" DrawerLength="150" DrawerLocation="Right">
 		    <TelerikPrimitives:RadSideDrawer.MainContent>
@@ -49,7 +50,8 @@
 		    </TelerikPrimitives:RadSideDrawer.MainContent>
 		    <TelerikPrimitives:RadSideDrawer.DrawerContent>
 		        <StackLayout>
-		            <Button Text="Business Jets" />
+		            <Button Text="Business Jets" Clicked="BizJet_Clicked" />
+					<Button Text="Speed Check" Clicked="SpeedCheck_Clicked" />
 		            <Button Text="Supersonic Jets" />
 		        </StackLayout>
 		    </TelerikPrimitives:RadSideDrawer.DrawerContent>

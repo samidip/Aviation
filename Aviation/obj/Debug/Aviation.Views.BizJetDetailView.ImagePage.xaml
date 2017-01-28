@@ -3,7 +3,7 @@
 	<ContentPage.Content>
 		<StackLayout Orientation="Vertical" VerticalOptions="Center">
 			<Label x:Name="BizJetName" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" />
-			<Image x:Name="BizJetImage" Aspect="AspectFit" />
+			<Image x:Name="BizJetImage" Aspect="AspectFill" />
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

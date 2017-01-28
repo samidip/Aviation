@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Aviation.BizJetDetailView"
-		    xmlns:MyTabPages="clr-namespace:Aviation;assembly=Aviation">
+		    xmlns:MyTabPages="clr-namespace:Aviation;assembly=Aviation" 
+			Title="BizJet Details">
 	<TabbedPage.Children>
 	    <MyTabPages:ImagePage Title="Your Jet" Icon="PlaneImage" />
 	    <MyTabPages:DetailsPage Title="Your Luxury" Icon="DetailImage" />

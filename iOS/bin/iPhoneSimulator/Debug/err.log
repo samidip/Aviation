@@ -1,13 +1,13 @@
 dyld: warning: could not load inserted library '/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/monotouch-fixes.dylib' because no suitable image found.  Did find:
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/monotouch-fixes.dylib: required code signature missing for '/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/monotouch-fixes.dylib'
 
-objc[920]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x122aef988) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/AVConference.framework/AVConference (0x122a26c38). One of the two will be used. Which one is undefined.
-objc[920]: Class PLBuildVersion is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices (0x1243ad998) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices (0x123de0880). One of the two will be used. Which one is undefined.
-2017-01-21 21:55:18.074 Aviation.iOS[920:26041] Xamarin.iOS: Read 1024 bytes from shared memory: 0x12ac1a000 with key 264106 and id 65536
-2017-01-21 21:55:18.074 Aviation.iOS[920:26041] Xamarin.iOS: Found port 49644 in shared memory
-2017-01-21 21:55:18.075 Aviation.iOS[920:26041] Xamarin.iOS: Added IP to look for the IDE: 127.0.0.1
-2017-01-21 21:55:18.075 Aviation.iOS[920:26041] Xamarin.iOS: IDE Port: 49644 Transport: WiFi
-2017-01-21 21:55:18.076 Aviation.iOS[920:26041] Xamarin.iOS: Socket error while connecting to IDE on 127.0.0.1:49644: Connection refused
-2017-01-21 21:55:18.076 Aviation.iOS[920:26031] Xamarin.iOS: Debugger not loaded (disabled).
-2017-01-21 21:55:18.078 Aviation.iOS[920:26031] Xamarin.iOS: Profiler not loaded (disabled)
-2017-01-21 21:55:18.125 Aviation.iOS[920:26031] Xamarin.iOS: Added dllmap for objc_msgSend
+objc[950]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x120543988) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/AVConference.framework/AVConference (0x12047ac38). One of the two will be used. Which one is undefined.
+objc[950]: Class PLBuildVersion is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices (0x121e01998) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices (0x121834880). One of the two will be used. Which one is undefined.
+2017-01-28 00:46:08.958 Aviation.iOS[950:25388] Xamarin.iOS: Read 1024 bytes from shared memory: 0x12866e000 with key 289275 and id 65536
+2017-01-28 00:46:08.958 Aviation.iOS[950:25388] Xamarin.iOS: Found port 49550 in shared memory
+2017-01-28 00:46:08.959 Aviation.iOS[950:25388] Xamarin.iOS: Added IP to look for the IDE: 127.0.0.1
+2017-01-28 00:46:08.959 Aviation.iOS[950:25388] Xamarin.iOS: IDE Port: 49550 Transport: WiFi
+2017-01-28 00:46:08.960 Aviation.iOS[950:25388] Xamarin.iOS: Socket error while connecting to IDE on 127.0.0.1:49550: Connection refused
+2017-01-28 00:46:08.960 Aviation.iOS[950:25378] Xamarin.iOS: Debugger not loaded (disabled).
+2017-01-28 00:46:08.962 Aviation.iOS[950:25378] Xamarin.iOS: Profiler not loaded (disabled)
+2017-01-28 00:46:09.007 Aviation.iOS[950:25378] Xamarin.iOS: Added dllmap for objc_msgSend
