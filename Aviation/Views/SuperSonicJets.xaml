@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Aviation.SuperSonicJets"
+		     xmlns:TelerikChart="clr-namespace:Telerik.XamarinForms.Chart;assembly=Telerik.XamarinForms.Chart"
+		     Title="SuperSonic Jets">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" Margin="20,40,10,10">
+			<TelerikChart:RadCartesianChart>
+			  <TelerikChart:RadCartesianChart.HorizontalAxis>
+			    <TelerikChart:CategoricalAxis />
+			  </TelerikChart:RadCartesianChart.HorizontalAxis>
+			  <TelerikChart:RadCartesianChart.VerticalAxis>
+			    <TelerikChart:NumericalAxis />
+			  </TelerikChart:RadCartesianChart.VerticalAxis>
+			  <TelerikChart:RadCartesianChart.Series>
+			    <TelerikChart:BarSeries x:Name="JetDataSeries" 
+					                    CategoryBinding="JetName" ValueBinding="JetMaxSpeed" />
+			  </TelerikChart:RadCartesianChart.Series>
+			</TelerikChart:RadCartesianChart>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

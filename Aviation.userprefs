@@ -1,15 +1,12 @@
 ﻿<Properties StartupConfiguration="{377C7081-58EF-43BC-91EB-7102559C1AE7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Aviation/Views/SpeedView.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Aviation/ViewModels/SuperSonicJetsViewModel.cs">
     <Files>
-      <File FileName="Aviation/Views/SpeedView.xaml" Line="7" Column="52" />
-      <File FileName="Aviation/Views/SpeedView.xaml.cs" Line="45" Column="1" />
-      <File FileName="Aviation/ViewModels/SpeedViewModel.cs" Line="34" Column="24" />
-      <File FileName="iOS/AppDelegate.cs" Line="11" Column="148" />
-      <File FileName="Aviation/Views/HomeView.xaml" Line="8" Column="54" />
-      <File FileName="Aviation/Views/HomeView.xaml.cs" Line="62" Column="35" />
+      <File FileName="Aviation/Views/SuperSonicJets.xaml" Line="4" Column="31" />
+      <File FileName="Aviation/Views/SuperSonicJets.xaml.cs" Line="18" Column="4" />
+      <File FileName="Aviation/ViewModels/SuperSonicJetsViewModel.cs" Line="14" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Aviation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.896D9A35-FF62-4081-B069-BA836A211D64" />
+  <MonoDevelop.Ide.ItemProperties.Aviation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3458301D-C2E9-4A14-A09C-19D26BD7B60C" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

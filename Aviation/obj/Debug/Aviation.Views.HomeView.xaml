@@ -52,7 +52,7 @@
 		        <StackLayout>
 		            <Button Text="Business Jets" Clicked="BizJet_Clicked" />
 					<Button Text="Speed Check" Clicked="SpeedCheck_Clicked" />
-		            <Button Text="Supersonic Jets" />
+		            <Button Text="Supersonic Jets" Clicked="SupersonicJet_Clicked"/>
 		        </StackLayout>
 		    </TelerikPrimitives:RadSideDrawer.DrawerContent>
 		</TelerikPrimitives:RadSideDrawer>

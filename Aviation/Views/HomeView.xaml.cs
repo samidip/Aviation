@@ -57,6 +57,11 @@ namespace Aviation
 			await Navigation.PushAsync(new SpeedView());
 		}
 
+		async void SupersonicJet_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new SuperSonicJets());
+		}
+
 		void BizJet_Clicked(object sender, System.EventArgs e)
 		{
 			this.HomeDrawer.IsOpen = false;

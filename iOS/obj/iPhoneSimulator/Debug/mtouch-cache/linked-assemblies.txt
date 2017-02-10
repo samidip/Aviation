@@ -1,6 +1,7 @@
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Runtime.Serialization.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.ServiceModel.Internals.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Telerik.XamarinForms.Common.iOS.dll
+/Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Telerik.XamarinForms.ChartRenderer.iOS.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Xml.ReaderWriter.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Telerik.XamarinForms.InputRenderer.iOS.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.Forms.Platform.iOS.dll
@@ -9,6 +10,7 @@
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.Forms.Xaml.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.Forms.Platform.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.ComponentModel.Composition.dll
+/Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Telerik.XamarinForms.Chart.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Telerik.XamarinForms.DataVisualization.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.dll
 /Users/sambasu/GitHub/Aviation/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/SkiaSharp.dll

@@ -54,3 +54,5 @@
 /Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.SpeedView.xaml.g.cs
 /Users/sambasu/GitHub/Aviation/Aviation/bin/Debug/SkiaSharp.dll
 /Users/sambasu/GitHub/Aviation/Aviation/bin/Debug/SkiaSharp.Views.Forms.dll
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.SuperSonicJets.xaml
+/Users/sambasu/GitHub/Aviation/Aviation/obj/Debug/Aviation.Views.SuperSonicJets.xaml.g.cs
