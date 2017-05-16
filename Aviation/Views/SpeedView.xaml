@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Aviation.SpeedView"
 		     xmlns:TelerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
 			 xmlns:TelerikCommon="clr-namespace:Telerik.XamarinForms.Common;assembly=Telerik.XamarinForms.Common"
@@ -10,7 +10,7 @@
 			<TelerikInput:RadAutoComplete BackgroundColor="Silver" x:Name="autoCompleteSearchBox" Margin="0,15,0,0" 
 										  TextSearchPath="JetName" CompletionMode="Contains" DisplayMode="Tokens" />
 			<Button Text="Show Max Speed .." Clicked="SpeedButton_CLicked" HorizontalOptions="Start" />
-			<TelerikGauges:RadRadialGauge Margin="0,25,0,0">
+			<TelerikGauges:RadRadialGauge Margin="0,25,0,0" HeightRequest="300" WidthRequest="300">
 				  <TelerikGauges:RadRadialGauge.Axis>
 				    <TelerikGauges:GaugeLinearAxis Minimum="600" Maximum="1200" Step="50" />
 				  </TelerikGauges:RadRadialGauge.Axis>

@@ -9,24 +9,22 @@
 // ------------------------------------------------------------------------------
 
 namespace Aviation {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/sambasu/GitHub/Aviation/Aviation/Views/BizJetDetailView/ImagePage.xaml")]
     public partial class ImagePage : global::Xamarin.Forms.ContentPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label BizJetName;
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Image BizJetImage;
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(ImagePage));
-            BizJetName = this.FindByName <global::Xamarin.Forms.Label>("BizJetName");
-            BizJetImage = this.FindByName <global::Xamarin.Forms.Image>("BizJetImage");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ImagePage));
+            BizJetName = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Label>(this, "BizJetName");
+            BizJetImage = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Image>(this, "BizJetImage");
         }
     }
 }

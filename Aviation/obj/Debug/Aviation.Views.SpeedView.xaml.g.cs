@@ -9,24 +9,22 @@
 // ------------------------------------------------------------------------------
 
 namespace Aviation {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/sambasu/GitHub/Aviation/Aviation/Views/SpeedView.xaml")]
     public partial class SpeedView : global::Xamarin.Forms.ContentPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Telerik.XamarinForms.Input.RadAutoComplete autoCompleteSearchBox;
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Telerik.XamarinForms.DataVisualization.Gauges.GaugeNeedleIndicator SpeedIndicator;
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(SpeedView));
-            autoCompleteSearchBox = this.FindByName <global::Telerik.XamarinForms.Input.RadAutoComplete>("autoCompleteSearchBox");
-            SpeedIndicator = this.FindByName <global::Telerik.XamarinForms.DataVisualization.Gauges.GaugeNeedleIndicator>("SpeedIndicator");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SpeedView));
+            autoCompleteSearchBox = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Telerik.XamarinForms.Input.RadAutoComplete>(this, "autoCompleteSearchBox");
+            SpeedIndicator = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Telerik.XamarinForms.DataVisualization.Gauges.GaugeNeedleIndicator>(this, "SpeedIndicator");
         }
     }
 }

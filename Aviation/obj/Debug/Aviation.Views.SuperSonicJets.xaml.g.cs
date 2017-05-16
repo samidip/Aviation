@@ -9,20 +9,18 @@
 // ------------------------------------------------------------------------------
 
 namespace Aviation {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/sambasu/GitHub/Aviation/Aviation/Views/SuperSonicJets.xaml")]
     public partial class SuperSonicJets : global::Xamarin.Forms.ContentPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Telerik.XamarinForms.Chart.BarSeries JetDataSeries;
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(SuperSonicJets));
-            JetDataSeries = this.FindByName <global::Telerik.XamarinForms.Chart.BarSeries>("JetDataSeries");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SuperSonicJets));
+            JetDataSeries = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Telerik.XamarinForms.Chart.BarSeries>(this, "JetDataSeries");
         }
     }
 }

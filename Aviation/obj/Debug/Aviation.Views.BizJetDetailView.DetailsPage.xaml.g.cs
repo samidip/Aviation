@@ -9,16 +9,14 @@
 // ------------------------------------------------------------------------------
 
 namespace Aviation {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/sambasu/GitHub/Aviation/Aviation/Views/BizJetDetailView/DetailsPage.xaml")]
     public partial class DetailsPage : global::Xamarin.Forms.ContentPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(DetailsPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DetailsPage));
         }
     }
 }

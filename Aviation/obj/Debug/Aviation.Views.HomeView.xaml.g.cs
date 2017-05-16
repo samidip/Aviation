@@ -9,24 +9,22 @@
 // ------------------------------------------------------------------------------
 
 namespace Aviation {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/sambasu/GitHub/Aviation/Aviation/Views/HomeView.xaml")]
     public partial class HomeView : global::Xamarin.Forms.ContentPage {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Telerik.XamarinForms.Primitives.RadSideDrawer HomeDrawer;
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Telerik.XamarinForms.DataControls.RadListView BizJetsList;
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(HomeView));
-            HomeDrawer = this.FindByName <global::Telerik.XamarinForms.Primitives.RadSideDrawer>("HomeDrawer");
-            BizJetsList = this.FindByName <global::Telerik.XamarinForms.DataControls.RadListView>("BizJetsList");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HomeView));
+            HomeDrawer = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Telerik.XamarinForms.Primitives.RadSideDrawer>(this, "HomeDrawer");
+            BizJetsList = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Telerik.XamarinForms.DataControls.RadListView>(this, "BizJetsList");
         }
     }
 }
