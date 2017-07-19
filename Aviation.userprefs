@@ -1,33 +1,8 @@
 ﻿<Properties StartupConfiguration="{377C7081-58EF-43BC-91EB-7102559C1AE7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Aviation/Views/SpeedView.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Aviation/Views/HomeView.xaml.cs">
     <Files>
-      <File FileName="Aviation/Views/HomeView.xaml" Line="1" Column="1" />
-      <File FileName="Aviation/AppStart.cs" Line="10" Column="33" />
-      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Aviation/Views/HomeView.xaml.cs" Line="47" Column="35" />
-      <File FileName="Aviation/ViewModels/BizJetsViewModel.cs" Line="34" Column="23" />
-      <File FileName="Aviation/Views/BizJetDetailView/BizJetDetailView.xaml" Line="1" Column="1" />
-      <File FileName="Aviation/ViewModels/BizJetsDetailViewModel.cs" Line="7" Column="26" />
-      <File FileName="Aviation/Views/SpeedView.xaml" Line="13" Column="90" />
-      <File FileName="Aviation/Models/BizJets.cs" Line="2" Column="15" />
-      <File FileName="Aviation/Views/BizJetDetailView/ImagePage.xaml" Line="1" Column="1" />
-      <File FileName="Aviation/ViewModels/SuperSonicJetsViewModel.cs" Line="1" Column="1" />
-      <File FileName="Aviation/Views/SuperSonicJets.xaml" Line="1" Column="1" />
-      <File FileName="Aviation/ViewModels/SpeedViewModel.cs" Line="1" Column="1" />
+      <File FileName="Aviation/Views/HomeView.xaml.cs" Line="53" Column="175" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Aviation" expanded="True">
-            <Node name="Aviation" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="SpeedView.xaml" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Aviation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C15EA99E-18EA-4ACF-BA98-CBA74126BADC" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -1,0 +1,8 @@
+objc[1692]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x11b80fca8) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/AVConference.framework/AVConference (0x11b741cd0). One of the two will be used. Which one is undefined.
+objc[1692]: Class PLBuildVersion is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices (0x11a009cc0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices (0x119e206f0). One of the two will be used. Which one is undefined.
+2017-07-19 15:20:56.882 Aviation.iOS[1692:277867] Xamarin.iOS: Added IP to look for the IDE: 127.0.0.1
+2017-07-19 15:20:56.883 Aviation.iOS[1692:277867] Xamarin.iOS: IDE Port: 15221 Transport: WiFi
+2017-07-19 15:20:56.883 Aviation.iOS[1692:277867] Xamarin.iOS: Socket error while connecting to IDE on 127.0.0.1:15221: Connection refused
+2017-07-19 15:20:56.884 Aviation.iOS[1692:277852] Xamarin.iOS: Debugger not loaded (disabled).
+2017-07-19 15:20:56.886 Aviation.iOS[1692:277852] Xamarin.iOS: Profiler not loaded (disabled)
+2017-07-19 15:20:56.932 Aviation.iOS[1692:277852] Xamarin.iOS: Added dllmap for objc_msgSend

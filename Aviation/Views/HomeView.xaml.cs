@@ -39,9 +39,23 @@ namespace Aviation
 			this.BizJetsList.EndRefresh();
 		}
 
-		private void Book_BizJet(object sender, EventArgs e)
+		private async void Book_BizJet(object sender, EventArgs e)
 		{
-			// Do stuff here.
+			try
+			{
+				var locator = Plugin.Geolocator.CrossGeolocator.Current;
+				locator.DesiredAccuracy = 50;
+
+				var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
+				if (position == null)
+					return;
+
+                var answer = await DisplayAlert("Select Airport?", "Would you like to fly out from near (" + position.Latitude + "," + position.Longitude + ")", "Yes", "No");
+			}
+            catch (Exception)
+			{
+				// Catch exceptions here.
+			}
 		}
 
 		private void BizJetsList_LoadOnDemand(object sender, EventArgs e)
