@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Aviation.HomeView"
 		     xmlns:TelerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
 		     xmlns:TelerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
@@ -53,6 +53,7 @@
 		            <Button Text="Business Jets" Clicked="BizJet_Clicked" />
 					<Button Text="Speed Check" Clicked="SpeedCheck_Clicked" />
 		            <Button Text="Supersonic Jets" Clicked="SupersonicJet_Clicked"/>
+                    <Button Text="Supersonic Speeds" Clicked="SupersonicSpeed_Clicked" />
 		        </StackLayout>
 		    </TelerikPrimitives:RadSideDrawer.DrawerContent>
 		</TelerikPrimitives:RadSideDrawer>

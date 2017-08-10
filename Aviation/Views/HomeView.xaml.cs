@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 
 using Xamarin.Forms;
 using Telerik.XamarinForms.DataControls.ListView;
-
+using Aviation.Views;
 
 namespace Aviation
 {
@@ -74,6 +74,11 @@ namespace Aviation
 		async void SupersonicJet_Clicked(object sender, System.EventArgs e)
 		{
 			await Navigation.PushAsync(new SuperSonicJets());
+		}
+
+		async void SupersonicSpeed_Clicked(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new SpeedSeries());
 		}
 
 		void BizJet_Clicked(object sender, System.EventArgs e)

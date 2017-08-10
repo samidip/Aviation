@@ -1,4 +1,5 @@
 ﻿using System;
+using Aviation.Views;
 using Xamarin.Forms;
 
 namespace Aviation
