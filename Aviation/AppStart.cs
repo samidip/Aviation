@@ -8,7 +8,7 @@ namespace Aviation
 	{
 		public App()
 		{
-			MainPage = new NavigationPage(new HomeView());
+            MainPage = new NavigationPage(new HomeView());
 		}
 
 		protected override void OnStart()

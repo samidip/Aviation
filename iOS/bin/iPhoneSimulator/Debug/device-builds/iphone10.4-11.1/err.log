@@ -1,0 +1,155 @@
+objc[865]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x125d0c490) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/AVConference (0x125b96120). One of the two will be used. Which one is undefined.
+objc[865]: Class SFUserNotification is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/Sharing.framework/Sharing (0x125071700) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/SafariServices.framework/SafariServices (0x10de41358). One of the two will be used. Which one is undefined.
+2017-11-12 06:22:50.253 Aviation.iOS[865:13977] Xamarin.iOS: Added IP to look for the IDE: 127.0.0.1
+2017-11-12 06:22:50.253 Aviation.iOS[865:13977] Xamarin.iOS: IDE Port: 15221 Transport: WiFi
+2017-11-12 06:22:50.253 Aviation.iOS[865:13977] Xamarin.iOS: Socket error while connecting to IDE on 127.0.0.1:15221: Connection refused
+2017-11-12 06:22:50.255 Aviation.iOS[865:13936] Xamarin.iOS: Debugger not loaded (disabled).
+2017-11-12 06:22:50.262 Aviation.iOS[865:13936] Xamarin.iOS: Profiler not loaded (disabled)
+2017-11-12 06:22:50.351 Aviation.iOS[865:13936] Xamarin.iOS: Added dllmap for objc_msgSend
+2017-11-12 06:23:08.444 Aviation.iOS[865:13936] *** Assertion failure in -[TKCollectionView _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:], /BuildRoot/Library/Caches/com.apple.xbs/Sources/UIKit_Sim/UIKit-3698.21.8/UICollectionView.m:6022
+2017-11-12 06:23:08.501 Aviation.iOS[865:13936] Xamarin.iOS: Received unhandled ObjectiveC exception: NSInternalInconsistencyException Invalid update: invalid number of items in section 0.  The number of items contained in an existing section after the update (18) must be equal to the number of items contained in that section before the update (17), plus or minus the number of items inserted or deleted from that section (1 inserted, 1 deleted) and plus or minus the number of items moved into or out of that section (0 moved in, 0 moved out).
+2017-11-12 06:23:08.526 Aviation.iOS[865:13936] 
+Unhandled Exception:
+Foundation.MonoTouchException: Objective-C exception thrown.  Name: NSInternalInconsistencyException Reason: Invalid update: invalid number of items in section 0.  The number of items contained in an existing section after the update (18) must be equal to the number of items contained in that section before the update (17), plus or minus the number of items inserted or deleted from that section (1 inserted, 1 deleted) and plus or minus the number of items moved into or out of that section (0 moved in, 0 moved out).
+Native stack trace:
+	0   CoreFoundation                      0x0000000114b5d1ab __exceptionPreprocess + 171
+	1   libobjc.A.dylib                     0x00000001157b6f41 objc_exception_throw + 48
+	2   CoreFoundation                      0x0000000114b62372 +[NSException raise:format:arguments:] + 98
+	3   Foundation                          0x000000010b4fa089 -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:] + 193
+	4   UIKit                               0x0000000109d95fb4 -[UICollectionView _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:] + 16892
+	5   UIKit                               0x0000000109d91a3b -[UICollectionView _updateRowsAtIndexPaths:updateAction:updates:] + 589
+	6   UIKit                               0x0000000109d91b84 -[UICollectionView reloadItemsAtIndexPaths:] + 62
+	7   Aviation.iOS                        0x0000000106040d38 -[TKCollectionView reloadItemsAtIndexPaths:] + 104
+	8   Aviation.iOS                        0x0000000106029599 -[TKListView reloadItemsAtIndexPaths:] + 73
+	9   Aviation.iOS                        0x00000001063a265c xamarin_dyn_objc_msgSendSuper + 220
+	10  ???                                 0x0000000135447deb 0x0 + 5188648427
+	11  UIKit                               0x00000001093738f0 +[UIView(Animation) performWithoutAnimation:] + 90
+	12  Aviation.iOS                        0x00000001063a2539 xamarin_dyn_objc_msgSend + 217
+	13  ???                                 0x0000000134cb1c1b 0x0 + 5180693531
+
+  at ObjCRuntime.Runtime.ThrowNSException (System.IntPtr ns_exception) [0x00000] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/ObjCRuntime/Runtime.cs:332 
+  at ObjCRuntime.Runtime.throw_ns_exception (System.IntPtr exc) [0x00000] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/runtime/Delegates.generated.cs:126 
+  at (wrapper native-to-managed) ObjCRuntime.Runtime:throw_ns_exception (intptr)
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) ApiDefinition.Messaging:void_objc_msgSendSuper_IntPtr (intptr,intptr,intptr)
+  at TelerikUI.TKListView.ReloadItems (Foundation.NSIndexPath[] indexPaths) [0x00059] in <ecd5b6bb7bca4e31bddbff54b66a188f>:0 
+  at Telerik.XamarinForms.DataControlsRenderer.iOS.ListView.UIListViewTemplateCell+<>c__DisplayClass6_0.<View_MeasureInvalidated>b__0 () [0x0000b] in <115ddaaac3ec4300a5cfeca81b6750fc>:0 
+  at ObjCRuntime.Trampolines+SDAction.Invoke (System.IntPtr block) [0x00019] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/build/ios/native/ObjCRuntime/Trampolines.g.cs:11286 
+  at (wrapper native-to-managed) ObjCRuntime.Trampolines+SDAction:Invoke (intptr)
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) ObjCRuntime.Messaging:void_objc_msgSend_IntPtr (intptr,intptr,intptr)
+  at UIKit.UIView.PerformWithoutAnimation (System.Action actionsWithoutAnimation) [0x0002e] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/build/ios/native/UIKit/UIView.g.cs:1362 
+  at Telerik.XamarinForms.DataControlsRenderer.iOS.ListView.UIListViewTemplateCell.View_MeasureInvalidated (System.Object sender, System.EventArgs e) [0x00035] in <115ddaaac3ec4300a5cfeca81b6750fc>:0 
+  at Xamarin.Forms.VisualElement.InvalidateMeasureInternal (Xamarin.Forms.Internals.InvalidationTrigger trigger) [0x0000b] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\VisualElement.cs:654 
+  at Xamarin.Forms.StackLayout.InvalidateMeasureInternal (Xamarin.Forms.Internals.InvalidationTrigger trigger) [0x0000b] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\StackLayout.cs:80 
+  at Xamarin.Forms.Layout.OnChildMeasureInvalidated (Xamarin.Forms.VisualElement child, Xamarin.Forms.Internals.InvalidationTrigger trigger) [0x00090] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\Layout.cs:316 
+  at Xamarin.Forms.Layout.OnChildMeasureInvalidated (System.Object sender, System.EventArgs e) [0x00013] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\Layout.cs:186 
+  at Xamarin.Forms.VisualElement.InvalidateMeasureInternal (Xamarin.Forms.Internals.InvalidationTrigger trigger) [0x0000b] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\VisualElement.cs:654 
+  at Xamarin.Forms.VisualElement.Xamarin.Forms.IVisualElementController.NativeSizeChanged () [0x00000] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\VisualElement.cs:432 
+  at Xamarin.Forms.Platform.iOS.ImageRenderer+<SetImage>d__7.MoveNext () [0x00167] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Platform.iOS\Renderers\ImageRenderer.cs:128 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/src/mono/mcs/class/referencesource/mscorlib/system/runtime/exceptionservices/exceptionservicescommon.cs:151 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs:1018 
+  at UIKit.UIKitSynchronizationContext+<Post>c__AnonStorey0.<>m__0 () [0x00000] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/UIKit/UIKitSynchronizationContext.cs:24 
+  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/Foundation/NSAction.cs:163 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/UIKit/UIApplication.cs:79 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/UIKit/UIApplication.cs:63 
+  at Aviation.iOS.Application.Main (System.String[] args) [0x00001] in /Users/sambasu/GitHub/Aviation/iOS/Main.cs:17 	0   CoreFoundation                      0x0000000114b5d1ab __exceptionPreprocess + 171
+	1   libobjc.A.dylib                     0x00000001157b6f41 objc_exception_throw + 48
+	2   CoreFoundation                      0x0000000114b62372 +[NSException raise:format:arguments:] + 98
+	3   Foundation                          0x000000010b4fa089 -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:] + 193
+	4   UIKit                               0x0000000109d95fb4 -[UICollectionView _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:] + 16892
+	5   UIKit                               0x0000000109d91a3b -[UICollectionView _updateRowsAtIndexPaths:updateAction:updates:] + 589
+	6   UIKit                               0x0000000109d91b84 -[UICollectionView reloadItemsAtIndexPaths:] + 62
+	7   Aviation.iOS                        0x0000000106040d38 -[TKCollectionView reloadItemsAtIndexPaths:] + 104
+	8   Aviation.iOS                        0x0000000106029599 -[TKListView reloadItemsAtIndexPaths:] + 73
+	9   Aviation.iOS                        0x00000001063a265c xamarin_dyn_objc_msgSendSuper + 220
+	10  ???                                 0x0000000135447deb 0x0 + 5188648427
+	11  UIKit                               0x00000001093738f0 +[UIView(Animation) performWithoutAnimation:] + 90
+	12  Aviation.iOS                        0x00000001063a2539 xamarin_dyn_objc_msgSend + 217
+	13  ???                                 0x0000000134cb1c1b 0x0 + 5180693531
+
+2017-11-12 06:23:08.532 Aviation.iOS[865:13936] Unhandled managed exception:
+Objective-C exception thrown.  Name: NSInternalInconsistencyException Reason: Invalid update: invalid number of items in section 0.  The number of items contained in an existing section after the update (18) must be equal to the number of items contained in that section before the update (17), plus or minus the number of items inserted or deleted from that section (1 inserted, 1 deleted) and plus or minus the number of items moved into or out of that section (0 moved in, 0 moved out).
+Native stack trace:
+	0   CoreFoundation                      0x0000000114b5d1ab __exceptionPreprocess + 171
+	1   libobjc.A.dylib                     0x00000001157b6f41 objc_exception_throw + 48
+	2   CoreFoundation                      0x0000000114b62372 +[NSException raise:format:arguments:] + 98
+	3   Foundation                          0x000000010b4fa089 -[NSAssertionHandler handleFailureInMethod:object:file:lineNumber:description:] + 193
+	4   UIKit                               0x0000000109d95fb4 -[UICollectionView _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:] + 16892
+	5   UIKit                               0x0000000109d91a3b -[UICollectionView _updateRowsAtIndexPaths:updateAction:updates:] + 589
+	6   UIKit                               0x0000000109d91b84 -[UICollectionView reloadItemsAtIndexPaths:] + 62
+	7   Aviation.iOS                        0x0000000106040d38 -[TKCollectionView reloadItemsAtIndexPaths:] + 104
+	8   Aviation.iOS                        0x0000000106029599 -[TKListView reloadItemsAtIndexPaths:] + 73
+	9   Aviation.iOS                        0x00000001063a265c xamarin_dyn_objc_msgSendSuper + 220
+	10  ???                                 0x0000000135447deb 0x0 + 5188648427
+	11  UIKit                               0x00000001093738f0 +[UIView(Animation) performWithoutAnimation:] + 90
+	12  Aviation.iOS                        0x00000001063a2539 xamarin_dyn_objc_msgSend + 217
+	13  ???                                 0x0000000134cb1c1b 0x0 + 5180693531
+ (Foundation.MonoTouchException)
+  at ObjCRuntime.Runtime.ThrowNSException (System.IntPtr ns_exception) [0x00000] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/ObjCRuntime/Runtime.cs:332 
+  at ObjCRuntime.Runtime.throw_ns_exception (System.IntPtr exc) [0x00000] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/runtime/Delegates.generated.cs:126 
+  at (wrapper native-to-managed) ObjCRuntime.Runtime:throw_ns_exception (intptr)
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) ApiDefinition.Messaging:void_objc_msgSendSuper_IntPtr (intptr,intptr,intptr)
+  at TelerikUI.TKListView.ReloadItems (Foundation.NSIndexPath[] indexPaths) [0x00059] in <ecd5b6bb7bca4e31bddbff54b66a188f>:0 
+  at Telerik.XamarinForms.DataControlsRenderer.iOS.ListView.UIListViewTemplateCell+<>c__DisplayClass6_0.<View_MeasureInvalidated>b__0 () [0x0000b] in <115ddaaac3ec4300a5cfeca81b6750fc>:0 
+  at ObjCRuntime.Trampolines+SDAction.Invoke (System.IntPtr block) [0x00019] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/build/ios/native/ObjCRuntime/Trampolines.g.cs:11286 
+  at (wrapper native-to-managed) ObjCRuntime.Trampolines+SDAction:Invoke (intptr)
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) ObjCRuntime.Messaging:void_objc_msgSend_IntPtr (intptr,intptr,intptr)
+  at UIKit.UIView.PerformWithoutAnimation (System.Action actionsWithoutAnimation) [0x0002e] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/build/ios/native/UIKit/UIView.g.cs:1362 
+  at Telerik.XamarinForms.DataControlsRenderer.iOS.ListView.UIListViewTemplateCell.View_MeasureInvalidated (System.Object sender, System.EventArgs e) [0x00035] in <115ddaaac3ec4300a5cfeca81b6750fc>:0 
+  at Xamarin.Forms.VisualElement.InvalidateMeasureInternal (Xamarin.Forms.Internals.InvalidationTrigger trigger) [0x0000b] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\VisualElement.cs:654 
+  at Xamarin.Forms.StackLayout.InvalidateMeasureInternal (Xamarin.Forms.Internals.InvalidationTrigger trigger) [0x0000b] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\StackLayout.cs:80 
+  at Xamarin.Forms.Layout.OnChildMeasureInvalidated (Xamarin.Forms.VisualElement child, Xamarin.Forms.Internals.InvalidationTrigger trigger) [0x00090] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\Layout.cs:316 
+  at Xamarin.Forms.Layout.OnChildMeasureInvalidated (System.Object sender, System.EventArgs e) [0x00013] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\Layout.cs:186 
+  at Xamarin.Forms.VisualElement.InvalidateMeasureInternal (Xamarin.Forms.Internals.InvalidationTrigger trigger) [0x0000b] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\VisualElement.cs:654 
+  at Xamarin.Forms.VisualElement.Xamarin.Forms.IVisualElementController.NativeSizeChanged () [0x00000] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Core\VisualElement.cs:432 
+  at Xamarin.Forms.Platform.iOS.ImageRenderer+<SetImage>d__7.MoveNext () [0x00167] in C:\BuildAgent3\work\ca3766cfc22354a1\Xamarin.Forms.Platform.iOS\Renderers\ImageRenderer.cs:128 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/src/mono/mcs/class/referencesource/mscorlib/system/runtime/exceptionservices/exceptionservicescommon.cs:151 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in /Library/Frameworks/Xamarin.iOS.framework/Versions/11.3.0.47/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs:1018 
+  at UIKit.UIKitSynchronizationContext+<Post>c__AnonStorey0.<>m__0 () [0x00000] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/UIKit/UIKitSynchronizationContext.cs:24 
+  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/Foundation/NSAction.cs:163 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/UIKit/UIApplication.cs:79 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in /Users/builder/data/lanes/5520/51128b8c/source/xamarin-macios/src/UIKit/UIApplication.cs:63 
+  at Aviation.iOS.Application.Main (System.String[] args) [0x00001] in /Users/sambasu/GitHub/Aviation/iOS/Main.cs:17 
+2017-11-12 06:23:08.533 Aviation.iOS[865:13936] critical: Stacktrace:
+
+2017-11-12 06:23:08.533 Aviation.iOS[865:13936] critical: 
+Native stacktrace:
+
+2017-11-12 06:23:08.538 Aviation.iOS[865:13936] critical: 	0   Aviation.iOS                        0x00000001061bdb04 mono_handle_native_crash + 244
+2017-11-12 06:23:08.538 Aviation.iOS[865:13936] critical: 	1   libsystem_platform.dylib            0x0000000116e47b3a _sigtramp + 26
+2017-11-12 06:23:08.539 Aviation.iOS[865:13936] critical: 	2   ???                                 0x00000001068d16d8 0x0 + 4404877016
+2017-11-12 06:23:08.539 Aviation.iOS[865:13936] critical: 	3   libsystem_c.dylib                   0x0000000116ae40e7 abort + 127
+2017-11-12 06:23:08.539 Aviation.iOS[865:13936] critical: 	4   Aviation.iOS                        0x00000001063935af xamarin_unhandled_exception_handler + 47
+2017-11-12 06:23:08.539 Aviation.iOS[865:13936] critical: 	5   Aviation.iOS                        0x0000000106227974 mono_invoke_unhandled_exception_hook + 148
+2017-11-12 06:23:08.539 Aviation.iOS[865:13936] critical: 	6   Aviation.iOS                        0x00000001061bd602 mono_handle_exception_internal + 4994
+2017-11-12 06:23:08.539 Aviation.iOS[865:13936] critical: 	7   Aviation.iOS                        0x00000001061bc278 mono_handle_exception + 24
+2017-11-12 06:23:08.539 Aviation.iOS[865:13936] critical: 	8   Aviation.iOS                        0x000000010613e92f mono_amd64_throw_exception + 143
+2017-11-12 06:23:08.540 Aviation.iOS[865:13936] critical: 	9   ???                                 0x000000013052cae7 0x0 + 5105699559
+2017-11-12 06:23:08.540 Aviation.iOS[865:13936] critical: 	10  Aviation.iOS                        0x000000010606bb4c _ZL30native_to_managed_trampoline_9P11objc_objectP13objc_selectorPP11_MonoMethodj + 284
+2017-11-12 06:23:08.540 Aviation.iOS[865:13936] critical: 	11  Aviation.iOS                        0x000000010606c884 -[__MonoMac_NSAsyncActionDispatcher xamarinApplySelector] + 52
+2017-11-12 06:23:08.540 Aviation.iOS[865:13936] critical: 	12  Foundation                          0x000000010b497948 __NSThreadPerformPerform + 334
+2017-11-12 06:23:08.540 Aviation.iOS[865:13936] critical: 	13  CoreFoundation                      0x0000000114b00231 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+2017-11-12 06:23:08.540 Aviation.iOS[865:13936] critical: 	14  CoreFoundation                      0x0000000114b9fe41 __CFRunLoopDoSource0 + 81
+2017-11-12 06:23:08.540 Aviation.iOS[865:13936] critical: 	15  CoreFoundation                      0x0000000114ae4b49 __CFRunLoopDoSources0 + 185
+2017-11-12 06:23:08.540 Aviation.iOS[865:13936] critical: 	16  CoreFoundation                      0x0000000114ae412f __CFRunLoopRun + 1279
+2017-11-12 06:23:08.541 Aviation.iOS[865:13936] critical: 	17  CoreFoundation                      0x0000000114ae39b9 CFRunLoopRunSpecific + 409
+2017-11-12 06:23:08.541 Aviation.iOS[865:13936] critical: 	18  GraphicsServices                    0x00000001173ca9c6 GSEventRunModal + 62
+2017-11-12 06:23:08.541 Aviation.iOS[865:13936] critical: 	19  UIKit                               0x00000001092b15e8 UIApplicationMain + 159
+2017-11-12 06:23:08.541 Aviation.iOS[865:13936] critical: 	20  ???                                 0x0000000134456280 0x0 + 5171929728
+2017-11-12 06:23:08.541 Aviation.iOS[865:13936] critical: 	21  ???                                 0x00000001344560e0 0x0 + 5171929312
+2017-11-12 06:23:08.541 Aviation.iOS[865:13936] critical: 
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+

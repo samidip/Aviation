@@ -28,8 +28,8 @@ namespace Aviation
 			{
 				BizJetsCollection = Application.Current.Properties["BizJetsCollection"] as ObservableCollection<BizJets>;
 				return BizJetsCollection;
-			}
-			else
+		    }
+			 else
 			{
 				var bizJetsManager = ELHandle.WorkWith().Data<BizJets>();
 				var allBizJets = await bizJetsManager.GetAll().ExecuteAsync();
@@ -41,7 +41,7 @@ namespace Aviation
 
 				Application.Current.Properties["BizJetsCollection"] = BizJetsCollection;
 				return BizJetsCollection;
-			}
+		    }
 		}
 	}
 }

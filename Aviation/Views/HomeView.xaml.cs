@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 using Xamarin.Forms;
-using Telerik.XamarinForms.DataControls.ListView;
 using Aviation.Views;
+using Telerik.XamarinForms.DataControls.ListView;
+using System.Threading.Tasks;
 
 namespace Aviation
 {
@@ -33,29 +34,17 @@ namespace Aviation
 			await Navigation.PushAsync(new BizJetDetailView(selectedBizJet));
 		}
 
-		private void BizJetsList_RefreshRequested(object sender, PullToRefreshRequestedEventArgs e)
+		private async void BizJetsList_RefreshRequested(object sender, PullToRefreshRequestedEventArgs e)
 		{
 			this.FetchViewData();
+           
+            await Task.Delay(5000);
 			this.BizJetsList.EndRefresh();
 		}
 
 		private async void Book_BizJet(object sender, EventArgs e)
 		{
-			try
-			{
-				var locator = Plugin.Geolocator.CrossGeolocator.Current;
-				locator.DesiredAccuracy = 50;
-
-				var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
-				if (position == null)
-					return;
-
-                var answer = await DisplayAlert("Select Airport?", "Would you like to fly out from near (" + position.Latitude + "," + position.Longitude + ")", "Yes", "No");
-			}
-            catch (Exception)
-			{
-				// Catch exceptions here.
-			}
+            await Navigation.PushAsync(new CustomerView());
 		}
 
 		private void BizJetsList_LoadOnDemand(object sender, EventArgs e)
