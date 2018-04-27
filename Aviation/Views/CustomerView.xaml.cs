@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Aviation.Views;
+using Plugin.Fingerprint;
 
 namespace Aviation
 {
@@ -35,7 +36,20 @@ namespace Aviation
             }
             catch (Exception)
             {
-                // Do stuff.
+                // Do oopsie stuff.
+            }
+        }
+
+        async void Button_Clicked(object sender, System.EventArgs e)
+        {
+            var result = await CrossFingerprint.Current.AuthenticateAsync("Prove you are you!");
+            if (result.Authenticated)
+            {
+                await DisplayAlert("Identification Success!", "Roger - you got it.", "Ok");
+            }
+            else
+            {
+                await DisplayAlert("Identification Failure!", "You are an imposter - GTFU.", "Ok");
             }
         }
     }

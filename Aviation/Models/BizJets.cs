@@ -1,13 +1,13 @@
 ﻿using System;
-using Telerik.Everlive.Sdk.Core;
 
+using Telerik.Everlive.Sdk.Core;
 using Telerik.Everlive.Sdk.Core.Model.Base;
 using Telerik.Everlive.Sdk.Core.Serialization;
 
 namespace Aviation
 {
 	[ServerType("BizJets")]
-	public class BizJets : DataItem
+    public class BizJets : DataItem
 	{
 		private string aircraftName;
 		public string AircraftName

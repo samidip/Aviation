@@ -4,6 +4,7 @@
 	<ContentPage.Content>
         <StackLayout Orientation="Vertical">
             <TelerikInput:RadDataForm x:Name="CustomerDataForm" />
+            <Button Text="Get Me Going!" Clicked="Button_Clicked" Font="Large" />
         </StackLayout>
 	</ContentPage.Content>
 </ContentPage>

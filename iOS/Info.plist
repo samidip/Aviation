@@ -44,5 +44,7 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>I will misuse this!</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Need your face/fingerprint for identification.</string>
 </dict>
 </plist>

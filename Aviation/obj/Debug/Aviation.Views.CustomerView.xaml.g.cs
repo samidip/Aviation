@@ -11,7 +11,7 @@
 namespace Aviation {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/sambasu/GitHub/Aviation/Aviation/Views/CustomerView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Sam/Projects/Aviation/Aviation/Views/CustomerView.xaml")]
     public partial class CustomerView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

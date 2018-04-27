@@ -78,3 +78,14 @@
 /Users/Sam/Projects/Aviation/Aviation/obj/Debug/Aviation.Views.CustomerView.xaml.g.cs
 /Users/Sam/Projects/Aviation/Aviation/obj/Debug/Aviation.dll
 /Users/Sam/Projects/Aviation/Aviation/obj/Debug/Aviation.pdb
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/SQLite-net.dll
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/SQLitePCLRaw.batteries_green.dll
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/SQLitePCLRaw.core.dll
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/SQLite-net.pdb
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/SQLite-net.xml
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/Plugin.Fingerprint.Abstractions.dll
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/Plugin.Fingerprint.dll
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/Plugin.Fingerprint.Abstractions.pdb
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/Plugin.Fingerprint.pdb
+/Users/Sam/Projects/Aviation/Aviation/bin/Debug/Plugin.Fingerprint.xml
