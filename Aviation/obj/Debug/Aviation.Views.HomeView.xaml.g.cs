@@ -11,7 +11,7 @@
 namespace Aviation {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/sambasu/GitHub/Aviation/Aviation/Views/HomeView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Sam/Projects/Aviation/Aviation/Views/HomeView.xaml")]
     public partial class HomeView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

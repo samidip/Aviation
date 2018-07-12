@@ -54,6 +54,7 @@
                     <Button Text="Speed Check" Clicked="SpeedCheck_Clicked" />
                     <Button Text="Supersonic Jets" Clicked="SupersonicJet_Clicked"/>
                     <Button Text="Supersonic Speeds" Clicked="SupersonicSpeed_Clicked" />
+                    <Button Text="Find Nearby Planes" Clicked="FindPlanes_Clicked" />
                 </StackLayout>
             </TelerikPrimitives:RadSideDrawer.DrawerContent>
         </TelerikPrimitives:RadSideDrawer>

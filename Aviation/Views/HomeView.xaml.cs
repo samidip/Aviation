@@ -70,6 +70,11 @@ namespace Aviation
 			await Navigation.PushAsync(new SpeedSeries());
 		}
 
+        async void FindPlanes_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new FindPlanes());
+        }
+
 		void BizJet_Clicked(object sender, System.EventArgs e)
 		{
 			this.HomeDrawer.IsOpen = false;

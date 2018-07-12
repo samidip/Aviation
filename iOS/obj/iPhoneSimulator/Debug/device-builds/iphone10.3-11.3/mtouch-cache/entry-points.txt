@@ -21,27 +21,7 @@ Function=WriteZStream
 Function=xamarin_start_wwan
 	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/System.dll
 	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_1
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_2
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_3
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_4
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_5
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_6
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_7
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_8
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_9
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_init_nsthread
+Function=xamarin_find_protocol_wrapper_type
 	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_get_block_descriptor
 	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
@@ -933,11 +913,33 @@ Function=xamarin_simd__Vector2_objc_msgSend_stret_nint
 	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_nint
 	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
-Function=UIApplicationMain
-	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_CGPoint__VNNormalizedFaceBoundingBoxPointForLandmarkPoint_Vector2_CGRect_nuint_nuint_string
 	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_CGPoint__VNImagePointForFaceLandmarkPoint_Vector2_CGRect_nuint_nuint_string
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_1
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_2
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_3
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_4
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_5
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_6
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_7
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_8
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_9
+	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_init_nsthread
 	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Xamarin.iOS.dll
 ObjectiveCClass=OBJC_CLASS_$_TKAlert
 	/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Telerik.Xamarin.iOS.dll

@@ -1,3 +1,4 @@
+RemoveDynamicRegistrar:false
 /Users/Sam/Projects/Aviation/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/Aviation.iOS.app:/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Aviation.iOS.exe
 /Users/Sam/Projects/Aviation/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/Aviation.iOS.app:/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/mscorlib.dll
 /Users/Sam/Projects/Aviation/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/Aviation.iOS.app:/Users/Sam/Projects/Aviation/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache/Link/Telerik.XamarinForms.DataControls.dll

@@ -49,7 +49,7 @@ namespace Aviation
             }
             else
             {
-                await DisplayAlert("Identification Failure!", "You are an imposter - GTFU.", "Ok");
+                await DisplayAlert("Identification Failure!", "You are an imposter - get out!", "Ok");
             }
         }
     }

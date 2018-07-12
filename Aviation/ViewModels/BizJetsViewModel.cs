@@ -1,79 +1,121 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-
-using Telerik.Everlive.Sdk.Core;
+using Kinvey;
 using Xamarin.Forms;
 
 namespace Aviation
 {
 	public class BizJetsViewModel
 	{
-		private string EverliveAppId = "lmplloffsq4t2dgt";
-		private EverliveApp ELHandle;
-        BizJetsLocalDBAccess localDBAccess = new BizJetsLocalDBAccess();
+        private Client kinveyClient;
+        public ObservableCollection<BizJets> BizJetsCollection { get; set; }
 
-		public ObservableCollection<BizJets> BizJetsCollection { get; set; }
+        // BizJetsLocalDBAccess localDBAccess = new BizJetsLocalDBAccess();
 
 		public BizJetsViewModel()
 		{
-            EverliveAppSettings appSettings = new EverliveAppSettings() { AppId = EverliveAppId, UseHttps = true };
-			ELHandle = new EverliveApp(appSettings);
+            InitializeKinvey();
 		}
 
-		public async Task<ObservableCollection<BizJets>> GetAllBizJets()
-		{
-			BizJetsCollection = new ObservableCollection<BizJets>();
+        private void InitializeKinvey()
+        {
+            Client.Builder builder = new Client.Builder("kid_HJCU4YBfG", "4aa3242bed234dda91936ef12490cbc0")
+                                    .setFilePath(DependencyService.Get<ISQLite>().GetPath())
+                                    .setOfflinePlatform(DependencyService.Get<ISQLite>().GetConnection());
 
-            // Hydrate from local SQL DB:
-            //if (localDBAccess.BizJetsLocalCollection.Count > 0)
-            //{
-            //    foreach (BizJetsLocal localBizJet in localDBAccess.BizJetsLocalCollection)
-            //    {
-            //        BizJets individualBizJet = new BizJets();
-            //        individualBizJet.AircraftName = localBizJet.AircraftName;
-            //        individualBizJet.AircraftCapacity = localBizJet.AircraftCapacity;
-            //        individualBizJet.AircraftImageURL = localBizJet.AircraftImageURL;
+            kinveyClient = builder.Build();
+            PingKinvey();
+        }
 
-            //        BizJetsCollection.Add(individualBizJet);
-            //    }
+        protected async void PingKinvey()
+        {
+            try
+            {
+                PingResponse response = await kinveyClient.PingAsync();
+            }
+            catch (Exception)
+            {
+                // Do some error handling.
+            }
+        }
 
-            //    return BizJetsCollection;
-            //}
+        public async Task<ObservableCollection<BizJets>> GetAllBizJets()
+        {
+            BizJetsCollection = new ObservableCollection<BizJets>();
 
             // Hydrate from Dictionary:
-			if (Application.Current.Properties.ContainsKey("BizJetsCollection"))
-			{
-				BizJetsCollection = Application.Current.Properties["BizJetsCollection"] as ObservableCollection<BizJets>;
-				return BizJetsCollection;
-		    }
+            if (Application.Current.Properties.ContainsKey("BizJetsCollection"))
+            {
+                BizJetsCollection = Application.Current.Properties["BizJetsCollection"] as ObservableCollection<BizJets>;
+                return BizJetsCollection;
+            }
 
-            // Fetch from Cloud:
-			else
-			{
-				var bizJetsManager = ELHandle.WorkWith().Data<BizJets>();
-				var allBizJets = await bizJetsManager.GetAll().ExecuteAsync();
+            // Hydrate from local SQL DB:
+            //else
+            //{
+                //if (localDBAccess.BizJetsLocalCollection.Count > 0)
+                //{
+                //    foreach (BizJetsLocal localBizJet in localDBAccess.BizJetsLocalCollection)
+                //    {
+                //        BizJets individualBizJet = new BizJets();
+                //        individualBizJet.AircraftName = localBizJet.AircraftName;
+                //        individualBizJet.AircraftCapacity = localBizJet.AircraftCapacity;
+                //        individualBizJet.AircraftImageURL = localBizJet.AircraftImageURL;
 
-				foreach (BizJets serializedBizJet in allBizJets)
-				{
-					BizJetsCollection.Add(serializedBizJet);
+                //        BizJetsCollection.Add(individualBizJet);
+                //    }
 
-                    //BizJetsLocal bizJetsLocal = new BizJetsLocal();
-                    //bizJetsLocal.AircraftName = serializedBizJet.AircraftName;
-                    //bizJetsLocal.AircraftCapacity = serializedBizJet.AircraftCapacity;
-                    //bizJetsLocal.AircraftImageURL = serializedBizJet.AircraftImageURL;
+                //    return BizJetsCollection;
+                //}
+            //}
 
-                    //localDBAccess.BizJetsLocalCollection.Add(bizJetsLocal);
-				}
+            // Fetch from cloud:
+            else
+            {
+                DataStore<BizJets> dataStore = DataStore<BizJets>.Collection("BizJets", DataStoreType.NETWORK);
+                List<BizJets> dataFromCloud = new List<BizJets>();
+                User implicitUser = await User.LoginAsync();
+                dataFromCloud = await dataStore.FindAsync();
 
-                // Stick into Dictionary:
-				Application.Current.Properties["BizJetsCollection"] = BizJetsCollection;
+                foreach (BizJets BizJetFromCloud in dataFromCloud)
+                {
+                    BizJets BizJetForCollection = new BizJets();
+                    BizJetForCollection.AircraftName = BizJetFromCloud.AircraftName;
+                    BizJetForCollection.AircraftCapacity = BizJetFromCloud.AircraftCapacity;
+                    BizJetForCollection.AircraftImageURL = BizJetFromCloud.AircraftImageURL;
+
+                    BizJetsCollection.Add(BizJetForCollection);
+                }
+
+                // Stick into Dictionary
+                Application.Current.Properties["BizJetsCollection"] = BizJetsCollection;
 
                 // Stick into SQL DB:
-                //localDBAccess.SaveAllBizJetsLocally();
+                //foreach (BizJets serializedBizJet in BizJetsCollection)
+                //{
+                        //BizJetsLocal bizJetsLocal = new BizJetsLocal();
+                        //bizJetsLocal.AircraftName = serializedBizJet.AircraftName;
+                        //bizJetsLocal.AircraftCapacity = serializedBizJet.AircraftCapacity;
+                        //bizJetsLocal.AircraftImageURL = serializedBizJet.AircraftImageURL;
 
-				return BizJetsCollection;
-		    }
-		}
+                        //localDBAccess.BizJetsLocalCollection.Add(bizJetsLocal);
+                //}
+                // localDBAccess.SaveAllBizJetsLocally();
+
+                return BizJetsCollection;
+            }
+        }
+		
 	}
 }
+
+
+
+
+
+
+
+
+
